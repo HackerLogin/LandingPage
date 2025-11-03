@@ -21,10 +21,10 @@ export function Navbar({
             <Link to="/" className="text-gray-300 hover:text-white transition-colors">
               Home
             </Link>
-            <Link to="/" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#about" className="text-gray-300 hover:text-white transition-colors">
               About
-            </Link>
-            <Link to="/" className="text-gray-300 hover:text-white transition-colors">
+            </a>
+            <Link to="/activities" className="text-gray-300 hover:text-white transition-colors">
               Activities
             </Link>
 
