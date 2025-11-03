@@ -21,7 +21,16 @@ export function Navbar({
             <Link to="/" className="text-gray-300 hover:text-white transition-colors">
               Home
             </Link>
-            <a href="/#about" className="text-gray-300 hover:text-white transition-colors">
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#about")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="text-gray-300 hover:text-white transition-colors"
+            >
               About
             </a>
             <Link to="/activities" className="text-gray-300 hover:text-white transition-colors">

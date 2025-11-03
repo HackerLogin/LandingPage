@@ -12,7 +12,7 @@ export function Footer() {
               <span className="text-xl font-bold text-white">HackerLogin</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              함께 배우고 성장하는 보안 및 해킹 동아리
+              Since 1998, 보안과 해킹에 열정을 가진 사람들이 모인 곳
             </p>
             <div className="flex gap-4">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
@@ -26,23 +26,10 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Location</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/activities" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Activities
-                </Link>
-              </li>
-              <li>
-                <Link to="/apply" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  지원하기
-                </Link>
-              </li>
+              <li className='font-extralight text-gray-400 text-sm'>광주 동구 조선대5길 65 309,</li>
+              <li className='font-extralight text-gray-400 text-sm'>조선대학교 IT융합대학 4층 해커로그인</li>
             </ul>
           </div>
 
@@ -50,8 +37,10 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>contact@hackerlogin.com</li>
-              <li>서울특별시 강남구</li>
+              <li className='font-semibold'>회장</li>
+              <li className='font-extralight'>이다인 010-2127-7532</li>
+              <li className='font-semibold'>부회장</li>
+              <li className='font-extralight'>제갈은지 010-4698-2513</li>
             </ul>
           </div>
         </div>

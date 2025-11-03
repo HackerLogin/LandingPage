@@ -138,10 +138,10 @@ export function HomePage() {
                   <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
                   <div>
                     <span className="font-semibold text-white">
-                      주간 스터디
+                      로그인 데이
                     </span>
                     <p className="text-gray-400 text-sm">
-                      웹 해킹, 시스템 해킹, 리버싱 등 다양한 주제
+                      웹 해킹, 리버싱, 포렌식, 다양한 주제의 프로젝트
                     </p>
                   </div>
                 </li>
@@ -160,7 +160,7 @@ export function HomePage() {
                   <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
                   <div>
                     <span className="font-semibold text-white">
-                      세미나 및 워크샵
+                      KUCIS 권역별 세미나
                     </span>
                     <p className="text-gray-400 text-sm">
                       최신 보안 트렌드와 기술 공유
@@ -170,9 +170,9 @@ export function HomePage() {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
                   <div>
-                    <span className="font-semibold text-white">프로젝트</span>
+                    <span className="font-semibold text-white">신입생 교육</span>
                     <p className="text-gray-400 text-sm">
-                      보안 도구 개발 및 취약점 연구
+                      보안 기초 지식부터 실습까지 체계적인 교육
                     </p>
                   </div>
                 </li>
@@ -185,31 +185,31 @@ export function HomePage() {
       {/* Stats Section */}
       <section className="py-24 px-6 bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
-                50+
+              <div className="!text-6xl md:text-5xl font-bold text-green-400 mb-2">
+                60+
               </div>
               <div className="text-gray-400">활동 멤버</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
-                30+
+              <div className="!text-6xl md:text-5xl font-bold text-green-400 mb-2">
+                40+
               </div>
               <div className="text-gray-400">CTF 참가</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
-                15+
+              <div className="!text-6xl md:text-5xl font-bold text-green-400 mb-2">
+                30+
               </div>
               <div className="text-gray-400">수상 경력</div>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
                 100+
               </div>
               <div className="text-gray-400">스터디 세션</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -234,10 +234,10 @@ export function HomePage() {
               <div className="p-6">
                 <div className="text-sm text-green-400 mb-2">2024.01.15</div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Web Hacking Workshop
+                  2024 호남지역 정보보호 해커톤 대회
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  SQL Injection과 XSS 공격 실습 워크샵 진행
+                  4,5위 수상 및 특별상 수상
                 </p>
               </div>
             </div>
@@ -247,9 +247,9 @@ export function HomePage() {
                 <TrophyIcon className="w-16 h-16 text-green-400" />
               </div>
               <div className="p-6">
-                <div className="text-sm text-green-400 mb-2">2024.01.10</div>
+                <div className="text-sm text-green-400 mb-2">2025.06.10</div>
                 <h3 className="text-xl font-semibold mb-2">
-                  CTF 대회 3위 수상
+                  KUCIS CTF 대회 1위 수상
                 </h3>
                 <p className="text-gray-400 text-sm">
                   국내 CTF 대회에서 우수한 성적 달성
@@ -262,12 +262,12 @@ export function HomePage() {
                 <BookOpenIcon className="w-16 h-16 text-green-400" />
               </div>
               <div className="p-6">
-                <div className="text-sm text-green-400 mb-2">2024.01.05</div>
+                <div className="text-sm text-green-400 mb-2">2024.02.05</div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Cryptography Study
+                  2024 해커스페이스 심화교육 이수
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  암호학 기초부터 고급까지 스터디 진행
+                  한국정보보호학회 호남지부 주관
                 </p>
               </div>
             </div>
@@ -285,13 +285,13 @@ export function HomePage() {
       <section className="py-24 px-6 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            함께 성장할 준비가 되셨나요?
+            보안인이 되고 싶은 자는 나에게로...
           </h2>
           <p className="text-xl text-gray-400 mb-8">
-            HackerLogin과 함께 보안 전문가로 성장하세요
+            보안과 해킹에 대한 열정을 가진 여러분을 환영합니다
           </p>
           {isRecruitmentOpen && <Link to="/apply" className="inline-block px-10 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-lg">
-              지금 지원하기
+              지원하기
             </Link>}
         </div>
       </section>
