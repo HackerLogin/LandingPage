@@ -26,14 +26,14 @@ export function HomePage() {
 
           {/* Main Heading */}
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-            혼자 가기엔
+            Hacker
             <br />
-            <span className="text-green-400">위험합니다</span>
+            <span className="text-green-400">Login</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">
-            함께 배우고, 함께 성장하는 보안 동아리 HackerLogin에 합류하세요
+            Since 1998, 보안과 해킹에 열정을 가진 사람들이 모인 곳
           </p>
 
           {/* CTA Buttons */}
@@ -50,7 +50,7 @@ export function HomePage() {
           </div>
 
           {/* Features */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div className="p-6 bg-gray-900/50 border border-gray-800 rounded-lg">
               <LockIcon className="w-8 h-8 text-green-400 mb-4" />
               <h3 className="text-lg font-semibold mb-2">보안 연구</h3>
@@ -72,7 +72,7 @@ export function HomePage() {
                 정기 스터디 및 세미나 진행
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -81,7 +81,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              About HackerLogin
+              About
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               보안과 해킹에 열정을 가진 사람들이 모여 함께 성장하는
