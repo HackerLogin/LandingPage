@@ -7,7 +7,7 @@ interface NavbarProps {
 export function Navbar({
   isRecruitmentOpen
 }: NavbarProps) {
-  return <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+  return <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm ">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -28,12 +28,12 @@ export function Navbar({
               Activities
             </Link>
 
-            {/* Recruitment Button */}
-            {isRecruitmentOpen ? <Link to="/apply" className="px-6 py-2 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-colors">
+            {/* 지원 버튼 */}
+            {/* {isRecruitmentOpen ? <Link to="/apply" className="px-6 py-2 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-colors">
                 지원하기
               </Link> : <button disabled className="px-6 py-2 bg-gray-700 text-gray-400 font-semibold rounded-lg cursor-not-allowed">
                 모집마감
-              </button>}
+              </button>} */}
           </div>
         </div>
       </div>
