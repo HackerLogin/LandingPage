@@ -12,7 +12,7 @@ export function Navbar({
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
-            <ShieldIcon className="w-8 h-8" />
+            {/* <ShieldIcon className="w-8 h-8" /> */}
             <span className="text-xl font-bold">HackerLogin</span>
           </Link>
 

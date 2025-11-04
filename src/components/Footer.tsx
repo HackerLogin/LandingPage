@@ -8,7 +8,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <ShieldIcon className="w-8 h-8 text-green-400" />
+              {/* <ShieldIcon className="w-8 h-8 text-green-400" /> */}
               <span className="text-xl font-bold text-white">HackerLogin</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
