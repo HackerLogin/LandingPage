@@ -4,26 +4,39 @@ import { Footer } from "../components/Footer";
 import { FileTextIcon, GraduationCapIcon, CheckCircleIcon, MailIcon, HelpCircleIcon, BookOpenIcon } from "lucide-react";
 
 export function ApplyPage() {
+  const isRecruitmentOpen = import.meta.env.VITE_RECRUITMENT_OPEN === "true";
+  const recruitmentGen = import.meta.env.VITE_RECRUITMENT_GEN;
+
   return (
     <div className="min-h-screen w-full bg-black text-white">
-      <Navbar isRecruitmentOpen={true} />
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="h-[70vh] flex flex-col items-center justify-center text-center relative px-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none" />
-        <div className="relative z-10 max-w-4xl">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+      <section className="h-[55vh] flex flex-col items-center justify-center text-center relative px-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black pointer-events-none" />
+        <div className="relative z-10 max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
             지원하기
           </h1>
-          <p className="text-xl text-gray-400 mb-10">
+          <p className="text-lg text-gray-400 mb-8">
             보안과 해킹에 열정을 가진 당신을 기다립니다
           </p>
-          <a
-            href="https://forms.gle/your-form-link" // 구글폼 링크로 교체 가능
-            className="inline-block px-10 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-lg"
-          >
-            온라인 지원서 작성하기
-          </a>
+
+          {isRecruitmentOpen ? (
+            <a
+              href="https://forms.gle/your-form-link"
+              className="inline-block px-8 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-base"
+            >
+              {recruitmentGen}기 지원하기
+            </a>
+          ) : (
+            <button
+              disabled
+              className="inline-block px-8 py-3 bg-gray-700 text-gray-400 font-semibold rounded-lg cursor-not-allowed text-base"
+            >
+              현재 {recruitmentGen}기 모집이 종료되었습니다
+            </button>
+          )}
         </div>
       </section>
 
@@ -90,18 +103,16 @@ export function ApplyPage() {
       <section className="py-24 px-6 bg-black">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">자주 묻는 질문</h2>
-          <p className="text-gray-400 text-lg">
-            지원 전, 아래 내용을 꼭 확인하세요
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 text-left">
             <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-              <HelpCircleIcon className="w-5 h-5 text-green-400" /> 비전공자도 지원 가능한가요?
+              <HelpCircleIcon className="w-5 h-5 text-green-400" /> 보안 지식이 전혀 없어도 지원할 수 있나요?
             </h3>
             <p className="text-gray-400">
-              가능합니다. 보안에 관심과 열정이 있다면 전공과 무관하게 지원할 수 있습니다.
+              가능합니다. 신입 기초교육 커리큘럼이 준비되어 있습니다.
+              보안에 대한 열정과 꾸준함이 가장 중요합니다.
             </p>
           </div>
 
