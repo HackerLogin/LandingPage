@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 import { TerminalIcon, LockIcon, UsersIcon, TrophyIcon, BookOpenIcon, CodeIcon } from 'lucide-react';
 export function HomePage() {
   // 모집 상태 - 필요시 변경 가능
-  const isRecruitmentOpen = true;
+  const isRecruitmentOpen = false;
   return <div className="min-h-screen w-full bg-black text-white">
       <Navbar isRecruitmentOpen={isRecruitmentOpen} />
 
@@ -41,7 +41,7 @@ export function HomePage() {
             {isRecruitmentOpen ? <Link to="/apply" className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-all text-lg">
                 지원하기
               </Link> : <button disabled className="px-8 py-4 bg-gray-700 text-gray-400 font-semibold rounded-lg cursor-not-allowed text-lg">
-                모집마감
+                29기 모집마감
               </button>}
 
             <a href="#about" className="px-8 py-4 bg-transparent border-2 border-gray-600 text-white font-semibold rounded-lg hover:border-gray-400 transition-all text-lg">
@@ -109,10 +109,9 @@ export function HomePage() {
                   <BookOpenIcon className="w-6 h-6 text-green-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">체계적인 학습</h3>
+                  <h3 className="text-xl font-semibold mb-2">정기 스터디</h3>
                   <p className="text-gray-400">
-                    기초부터 고급까지, 단계별 커리큘럼으로 체계적인 학습을
-                    제공합니다
+                    최신 보안 트렌드와 기술을 공유하는 정기 스터디를 운영합니다
                   </p>
                 </div>
               </div>
@@ -290,9 +289,11 @@ export function HomePage() {
           <p className="text-xl text-gray-400 mb-8">
             보안과 해킹에 대한 열정을 가진 여러분을 환영합니다
           </p>
-          {isRecruitmentOpen && <Link to="/apply" className="inline-block px-10 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-lg">
+          {isRecruitmentOpen ? <Link to="/apply" className="inline-block px-10 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-lg">
               지원하기
-            </Link>}
+            </Link>: <button disabled className="inline-block px-10 py-4 bg-gray-700 text-gray-400 font-semibold rounded-lg cursor-not-allowed text-lg">
+              29기 모집마감
+            </button>}
         </div>
       </section>
 
