@@ -14,14 +14,14 @@ export function Footer() {
             <p className="text-gray-400 text-sm mb-4">
               Since 1998, 보안과 해킹에 열정을 가진 사람들이 모인 곳
             </p>
-            <div className="flex gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
-                <GithubIcon className="w-5 h-5" />
-              </a>
-              <a href="mailto:contact@hackerlogin.com" className="text-gray-400 hover:text-green-400 transition-colors">
-                <MailIcon className="w-5 h-5" />
-              </a>
-            </div>
+              {/* <div className="flex gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+                  <GithubIcon className="w-5 h-5" />
+                </a>
+                <a href="mailto:contact@hackerlogin.com" className="text-gray-400 hover:text-green-400 transition-colors">
+                  <MailIcon className="w-5 h-5" />
+                </a>
+              </div> */}
           </div>
 
           {/* Quick Links */}
@@ -37,10 +37,8 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li className='font-semibold'>회장</li>
-              <li className='font-extralight'>이다인 010-2127-7532</li>
-              <li className='font-semibold'>부회장</li>
-              <li className='font-extralight'>제갈은지 010-4698-2513</li>
+              <li className='font-semibold'>Email</li>
+              <li className='font-extralight'>hackerlogin@googlegroups.com</li>
             </ul>
           </div>
         </div>
