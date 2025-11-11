@@ -21,7 +21,10 @@ export function Navbar({
             <Link to="/" className="text-gray-300 hover:text-white transition-colors">
               Home
             </Link>
-            <a
+            <Link to="/apply" className="text-gray-300 hover:text-white transition-colors">
+              Apply
+            </Link>
+            {/* <a
               href="#about"
               onClick={(e) => {
                 e.preventDefault();
@@ -32,7 +35,7 @@ export function Navbar({
               className="text-gray-300 hover:text-white transition-colors"
             >
               About
-            </a>
+            </a> */}
             <Link to="/activities" className="text-gray-300 hover:text-white transition-colors">
               Activities
             </Link>
