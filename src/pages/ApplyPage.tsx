@@ -24,7 +24,7 @@ export function ApplyPage() {
 
           {isRecruitmentOpen ? (
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScyh4wR9ymrMqeO6e3cCGLqdvrUUK3dBu990K4XVe7Idwt_ZA/viewform?usp=publish-editor"
+              href={formUrl}
               className="inline-block px-8 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all text-base"
             >
               {recruitmentGen}기 지원하기
